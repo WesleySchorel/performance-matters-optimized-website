@@ -1,0 +1,32 @@
+{
+  "name": "performance-matters-optimized-website",
+  "version": "1.0.0",
+  "description": "Maak met een team een website voor een opdrachtgever door verschillende performance technieken toe te passen.",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WesleySchorel/performance-matters-optimized-website.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "R. Vellinga, D. Carstens, W. Schorel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WesleySchorel/performance-matters-optimized-website/issues"
+  },
+  "homepage": "https://github.com/WesleySchorel/performance-matters-optimized-website#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
