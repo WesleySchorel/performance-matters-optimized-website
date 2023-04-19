@@ -1,0 +1,24 @@
+:root {
+    --c-white: white;
+    --c-black: black;
+
+    --c-purple: #B9005F;
+    --c-pink: #E30059;
+    --c-blue: #606EB3;
+    --c-gray: #ededed;
+    --c-darkgray: #C9B5B2;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: var(--c-black);
+  background: var(--c-gray);
+}
+
+/* Navigatie */
+
+nav {
+    position: sticky;
+    top: 0;
+}
