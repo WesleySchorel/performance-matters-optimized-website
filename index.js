@@ -13,8 +13,19 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', function (req, res) {
-  // res.send('Hello World!')
-  res.render('index')
+  res.render('index', {active: '/'})
+})
+
+app.get('/projectboard', function (req, res) {
+  res.render('projectboard', {active: '/projectboard'})
+})
+
+app.get('/toolboard', function (req, res) {
+  res.render('toolboard', {active: '/toolboard'})
+})
+
+app.get('/contact', function (req, res) {
+  res.render('contact', {active: '/contact'})
 })
 
 // Stel het poortnummer in waar express op gaat luisteren

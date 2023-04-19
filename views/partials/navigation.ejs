@@ -1,3 +1,11 @@
 <nav>
-  
+  <div>
+    <a href="/"><img src="/assets/vervoerregio-logo.svg" alt="Logo van Vervoerregio Amsterdam"></a>
+  </div>
+  <ul>
+    <li <% if(active=="/" ) {%> class="active"<%}%>><a href="/">Home</a></li>
+    <li <% if(active=="/projectboard" ) {%> class="active"<%}%>><a href="/projectboard">Projecten</a></li>
+    <li <% if(active=="/toolboard" ) {%> class="active"<%}%>><a href="/toolboard">Instrumentarium</a></li>
+    <li <% if(active=="/contact" ) {%> class="active"<%}%>><a href="/contact">Contact</a></li>
+  </ul>
 </nav>
