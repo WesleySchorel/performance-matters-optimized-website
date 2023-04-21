@@ -100,7 +100,7 @@ nav li a:hover {
 
 .hero-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/6Cy55t3.jpeg");
-  height: 45vh;
+  height: 55vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
