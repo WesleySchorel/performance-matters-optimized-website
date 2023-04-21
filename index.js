@@ -24,8 +24,8 @@ app.get('/toolboard', function (req, res) {
   res.render('toolboard', {active: '/toolboard'})
 })
 
-app.get('/contact', function (req, res) {
-  res.render('contact', {active: '/contact'})
+app.get('/urltoevoegen', function (req, res) {
+  res.render('urltoevoegen', {active: '/urltoevoegen'})
 })
 
 // Stel het poortnummer in waar express op gaat luisteren

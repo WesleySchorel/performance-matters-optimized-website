@@ -16,11 +16,12 @@
   scroll-behavior: smooth;
 }
 
-body {
+body,html {
   font-family: sans-serif;
   font-size: 1rem;
   color: var(--c-black);
   background: var(--c-gray);
+  height: 100%;
 }
 
 /* Navigatie */
@@ -93,4 +94,13 @@ nav li a {
 
 nav li a:hover {
   background-color: var(--c-purple);
+}
+
+.hero-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/6Cy55t3.jpeg");
+  height: 65vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
