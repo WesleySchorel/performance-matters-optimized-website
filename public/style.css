@@ -1,12 +1,12 @@
 :root {
-    --c-white: white;
-    --c-black: black;
+  --c-white: white;
+  --c-black: black;
 
-    --c-purple: #B9005F;
-    --c-pink: #E30059;
-    --c-blue: #606EB3;
-    --c-gray: #ededed;
-    --c-darkgray: #C9B5B2;
+  --c-purple: #B9005F;
+  --c-pink: #E30059;
+  --c-blue: #606EB3;
+  --c-gray: #ededed;
+  --c-darkgray: #C9B5B2;
 }
 
 * {
@@ -16,7 +16,8 @@
   scroll-behavior: smooth;
 }
 
-body,html {
+body,
+html {
   font-family: sans-serif;
   font-size: 1rem;
   color: var(--c-black);
@@ -29,6 +30,7 @@ body,html {
 nav {
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav div {
@@ -54,7 +56,7 @@ ul::after {
   z-index: 1;
 }
 
-nav div a  {
+nav div a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +102,7 @@ nav li a:hover {
 
 .hero-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/6Cy55t3.jpeg");
-  height: 55vh;
+  height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,6 +117,7 @@ nav li a:hover {
 
 .header-container div {
   width: 80%;
+  height: 10em;
   padding: 2.5rem 2rem;
   border-radius: 10px;
   background-color: var(--c-white);
@@ -132,4 +135,43 @@ nav li a:hover {
 .header-container p {
   margin-top: 5px;
   font-size: 1.2em;
+}
+
+/* Uitleg container */
+
+.uitleg-container {
+  width: 80%;
+  margin: 7em auto 7em auto;
+  padding-bottom: 2em;
+}
+
+.uitleg-container article {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: var(--c-white);
+  margin-top: 2em;
+}
+
+.uitleg-container div {
+  padding: 2em;
+}
+
+.uitleg-container img {
+  max-height: 300px;
+  width: 50%;
+}
+
+.uitleg-container article:first-child img {
+  transform: scaleX(-1);
+}
+
+.uitleg-container h2 {
+  color: var(--c-pink);
+  font-size: 2em;
+}
+
+.uitleg-container p {
+  margin-top: 5px;
+  font-size: 1.1em;
 }
