@@ -117,7 +117,7 @@ nav li a:hover {
 
 .header-container div {
   width: 80%;
-  height: 10em;
+  height: auto;
   padding: 2.5rem 2rem;
   border-radius: 10px;
   background-color: var(--c-white);
@@ -141,7 +141,7 @@ nav li a:hover {
 
 .uitleg-container {
   width: 80%;
-  margin: 7em auto 7em auto;
+  margin: 6.5em auto 6.5em auto;
   padding-bottom: 2em;
 }
 
@@ -174,4 +174,52 @@ nav li a:hover {
 .uitleg-container p {
   margin-top: 5px;
   font-size: 1.1em;
+}
+
+/* Responsive media queries */
+
+@media screen and (max-width: 845px) {
+  .header-container h1 {
+    font-size: 2em;
+  }
+
+  .header-container p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-container h1 {
+    font-size: 1.8em;
+  }
+
+  .header-container p {
+    font-size: 1em;
+  }
+
+  .uitleg-container h2 {
+    font-size: 1.5em;
+  }
+
+  .uitleg-container p {
+    font-size: 1em;
+  }
+
+  .uitleg-container article {
+    flex-direction: column;
+  }
+
+  .uitleg-container img {
+    width: 100%;
+  }
+
+  .header-container div {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .uitleg-container {
+    margin: 9em auto 7em auto;
+  }
 }
