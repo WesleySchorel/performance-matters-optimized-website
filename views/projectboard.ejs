@@ -6,13 +6,23 @@
         <div>
             <h1>Projecten.</h1>
             <p>Voeg partners van Vervoerregio Amsterdam toen aan de projecten lijst.</p>
-            <svg width="34" height="31" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg%22%3E">
+            <svg class="cubeimage" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg%22%3E">
                 <rect x="11.5" y="8.5" width="22" height="22" stroke="#E30059"/>
             <rect x="0.5" y="0.5" width="22" height="22" fill="white" stroke="#E30059" stroke-dasharray="2 2"/>
             </svg>
         </div>
     </div>
 
+    <div class="partner-container">
+        <% partner_data.websites.forEach(website=> { %>
+            <div class="partner-cube">
+                <div>
+                    <h2><%= website.titel %></h2>
+                    <a class="partners__link" target="_blank" href="<%= website.homepage %>"><%= website.homepage %></a>
+                </div>
+            </div>
+            <%})%>
+    </div>
     
 </main>
 

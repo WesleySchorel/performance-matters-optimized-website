@@ -176,6 +176,33 @@ nav li a:hover {
   font-size: 1.1em;
 }
 
+.cubeimage {
+  width: 7em;
+  float: right;
+  margin-top: -5em;
+}
+
+.partner-container {
+  margin: 6.5em auto 6.5em auto;
+  color: var(--c-pink);
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1em;
+  padding: .5em;
+}
+
+.partner-cube {
+  background-color: var(--c-white);
+  width: auto;
+  height: 18em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2.5rem 2rem;
+}
+
 /* Responsive media queries */
 
 @media screen and (max-width: 845px) {

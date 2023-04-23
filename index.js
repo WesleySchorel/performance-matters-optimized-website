@@ -1,6 +1,12 @@
 // Importeer express uit de node_modules map
 import express from 'express'
 
+const baseURL = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1'
+const partnerSlug = '/websites'
+
+const partner_data = await fetch(baseURL + partnerSlug). then((response) => response.json())
+
+
 // Maak een nieuwe express app aan
 const app = express()
 
@@ -17,7 +23,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/projectboard', function (req, res) {
-  res.render('projectboard', {active: '/projectboard'})
+  res.render('projectboard', { partner_data, active: '/projectboard'})
 })
 
 app.get('/toolboard', function (req, res) {
