@@ -40,6 +40,16 @@ app.get('/urltoevoegen', function (req, res) {
   res.render('urltoevoegen', {partner_data, active: '/urltoevoegen'})
 })
 
+app.get('/urloverzicht', function (request, response) {
+  let id = request.query.websiteId
+  console.log(id);
+  let partnerUrl = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1/urls?websiteId=' + id + '&first=100'
+  
+  fetchJson(partnerUrl).then((partnerData) => {
+    response.render('urloverzicht', {partnerData, partner_data, active: '/urloverzicht'})
+  })
+})
+
 app.post('/urltoevoegen', function(req, res) {
   const formURL = baseURL + postSlug
   postJson(formURL, req.body).then((data) => {

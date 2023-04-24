@@ -13,19 +13,18 @@
         </div>
     </div>
     <div class="partner-container">
-        <% partner_data.websites.forEach(website=> { %>
+        <% partnerData.urls.forEach(url=> { %>
             <div class="partner-cube">
-                <div class="partner-content">
-                    <h2><%= website.titel %></h2>
-                    <a class="partners__link" target="_blank" href="<%= website.homepage %>"><%= website.homepage %></a>
+                <div>
+                    <h2><%= url.website.titel %></h2>
+                    <a class="websites__link" target="_blank" href="<%= url.url %>"><%= url.url %></a>
                 </div>
-                <section class="check-button">
-                    <a href="/urloverzicht?websiteId=<%= website.id %>"><img src="/assets/globe-outline.svg" class="globe" alt="check button"></a>
-                </section>
+                <div class="website__urls">
+                    <a class="website__icon" href="/check?id=<%= url.id %>">X</a>
+                </div>
             </div>
             <%})%>
     </div>
     
 </main>
-
 <%- include('./partials/foot') %>
