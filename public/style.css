@@ -105,6 +105,8 @@ nav li a:hover {
 .hero-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/6Cy55t3.jpeg");
   height: 50vh;
+  height: 50svh;
+  min-height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,6 +309,21 @@ form div{
 .instrumentarium-container p {
   margin-top: 5px;
   font-size: 1.1em;
+}
+
+.instrumentarium-container details {
+  background: #eee;
+  margin-bottom: 2rem;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+.instrumentarium-container summary {
+  cursor: pointer;
+}
+
+.instrumentarium-container summary > * {
+  display: inline;
 }
 
 .url-cube {

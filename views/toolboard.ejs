@@ -6,7 +6,7 @@
     <div class="header-container">
         <div>
             <h1>Projecten.</h1>
-            <p>Voeg partners van Vervoerregio Amsterdam toen aan de projecten lijst.</p>
+            <p>Controleer aan de hand van deze criteria of deze partner aan de eisen voldoet.</p>
             <svg class="cubeimage" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg%22%3E">
                 <rect x="11.5" y="8.5" width="22" height="22" stroke="#E30059"/>
             <rect x="0.5" y="0.5" width="22" height="22" fill="white" stroke="#E30059" stroke-dasharray="2 2"/>
@@ -20,14 +20,15 @@
                 <% principe_data.principes.forEach(principe=> { %>
                     <h2><%= principe.titel %></h2>
                     <p><%- principe.beschrijving.html %></p>
+                    <% principe.richtlijnen.forEach(richtlijn => { %>
                     <details onclick="scrollFunction()">
                         <summary>
-                        </summary>         
-                        <% principe.richtlijnen.forEach(richtlijn => { %>
-                          <h3><%- richtlijn.titel %></h3>
+                            <h3><%- richtlijn.titel %></h3>
+                        </summary>        
                             <div id="info" class="info" id="<%= richtlijn.titel.toLowerCase() %>"><%- richtlijn.uitleg.html %></div>
+                        </details>
                         <% }) %>
-                    </details>
+
                     <%})%>
             </div>
         </article>
