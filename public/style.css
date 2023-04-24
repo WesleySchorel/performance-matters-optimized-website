@@ -224,6 +224,7 @@ nav li a:hover {
 
 .globe {
   height: 2em;
+  padding: .2rem;
 }
 
 /* URL toevoegen pagina */
