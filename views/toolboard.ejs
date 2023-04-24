@@ -17,8 +17,18 @@
     <section class="instrumentarium-container">
         <article>
             <div>
-                <h2>Waarneembaar.</h2>
-                <p>Hier komt de checklist</p>
+                <% principe_data.principes.forEach(principe=> { %>
+                    <h2><%= principe.titel %></h2>
+                    <p><%- principe.beschrijving.html %></p>
+                    <details onclick="scrollFunction()">
+                        <summary>
+                        </summary>         
+                        <% principe.richtlijnen.forEach(richtlijn => { %>
+                          <h3><%- richtlijn.titel %></h3>
+                            <div id="info" class="info" id="<%= richtlijn.titel.toLowerCase() %>"><%- richtlijn.uitleg.html %></div>
+                        <% }) %>
+                    </details>
+                    <%})%>
             </div>
         </article>
     </section>

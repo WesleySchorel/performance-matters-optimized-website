@@ -2,11 +2,12 @@
 import express from 'express'
 
 const baseURL = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1'
+const principes = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1/principes'
 const partnerSlug = '/websites'
 const postSlug = '/urls'
 
 const partner_data = await fetch(baseURL + partnerSlug). then((response) => response.json())
-
+const principe_data = await fetch(principes). then((response) => response.json())
 
 // Maak een nieuwe express app aan
 const app = express()
@@ -31,7 +32,8 @@ app.get('/projectboard', function (req, res) {
 })
 
 app.get('/toolboard', function (req, res) {
-  res.render('toolboard', {active: '/toolboard'})
+  res.render('toolboard', {principe_data, active: '/toolboard'})
+  console.log(principe_data);
 })
 
 app.get('/urltoevoegen', function (req, res) {
