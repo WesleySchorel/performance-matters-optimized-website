@@ -248,6 +248,28 @@ nav li a:hover {
   padding: .2rem;
 }
 
+.url {
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.url-knop {
+  display: flex;
+  height: 2em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--c-pink);
+}
+
+ion-icon {
+  color: var(--c-white);
+  font-size: 1.5em;
+}
+
 /* URL toevoegen pagina */
 
 .formulier-container {
@@ -301,9 +323,29 @@ form div{
 
 /* Instrumentarium */
 
+.huidigURL {
+  width: 80%;
+  margin: 6.5em auto 0 auto;
+}
+
+.huidigURL h2 {
+  color: var(--c-pink);
+}
+
+.huidigURL article {
+  display: flex;
+  border-radius: 10px;
+  width: 70%;
+  height: auto;
+  background-color: var(--c-white);
+  margin-top: 2em;
+  flex-direction: column;
+  padding: 1.5em 2em;
+}
+
 .instrumentarium-container {
   width: 80%;
-  margin: 6.5em auto 7.5em auto;
+  margin: 0 auto 7.5em auto;
   padding-bottom: 2em;
 }
 
@@ -320,9 +362,9 @@ form div{
   padding: 2em;
 }
 
-.instrumentarium-container h2 {
+.instrumentarium-container h3 {
   color: var(--c-pink);
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .instrumentarium-container p {
@@ -351,7 +393,7 @@ form div{
   height: auto;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   border-radius: 10px;
   padding: 2.5rem 2rem;
 }
