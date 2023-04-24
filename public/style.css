@@ -7,6 +7,8 @@
   --c-blue: #606EB3;
   --c-gray: #ededed;
   --c-darkgray: #C9B5B2;
+
+  --c-hover: #cb0069;
 }
 
 * {
@@ -95,7 +97,7 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: var(--c-purple);
+  background-color: var(--c-hover);
 }
 
 /* Header */
