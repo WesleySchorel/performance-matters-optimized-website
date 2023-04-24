@@ -224,6 +224,7 @@ nav li a:hover {
 
 .globe {
   height: 2em;
+  padding: .2rem;
 }
 
 /* URL toevoegen pagina */
@@ -275,6 +276,37 @@ input[type="submit"] {
 form div{
   display: flex;
   flex-direction: column;
+}
+
+/* Instrumentarium */
+
+.instrumentarium-container {
+  width: 80%;
+  margin: 7.5em auto 7.5em auto;
+  padding-bottom: 2em;
+}
+
+.instrumentarium-container article {
+  display: flex;
+  border-radius: 10px;
+  width: 70%;
+  height: auto;
+  background-color: var(--c-white);
+  margin-top: 2em;
+}
+
+.instrumentarium-container div {
+  padding: 2em;
+}
+
+.instrumentarium-container h2 {
+  color: var(--c-pink);
+  font-size: 2em;
+}
+
+.instrumentarium-container p {
+  margin-top: 5px;
+  font-size: 1.1em;
 }
 
 /* Responsive media queries */
