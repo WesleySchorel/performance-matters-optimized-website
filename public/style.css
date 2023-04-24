@@ -176,6 +176,8 @@ nav li a:hover {
   font-size: 1.1em;
 }
 
+/* Projectboard */
+
 .cubeimage {
   width: 10em;
   right: 0;
@@ -222,6 +224,57 @@ nav li a:hover {
 
 .globe {
   height: 2em;
+}
+
+/* URL toevoegen pagina */
+
+.formulier-container {
+  width: 80%;
+  border-radius: 10px;
+  margin: 6.5em auto 6.5em auto;
+  padding-bottom: 2em;
+
+}
+
+.formulier-container .formulier {
+  background-color: var(--c-white);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+
+.formulier-container h2 {
+  font-size: 1.6em;
+  color: var(--c-pink);
+}
+
+form label {
+  font-size: 1.1em;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+form input, select {
+  border: 2px solid var(--c-pink);
+  outline: var(--c-pink);
+  color: var(--c-pink);
+  margin-left: 0;
+  padding: .5em;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  color: var(--c-white);
+  padding: .5em;
+  margin-top: 12px;
+  font-size: 1em;
+  width: 15em;
+  background-color: var(--c-pink);
+  cursor: pointer;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
 }
 
 /* Responsive media queries */

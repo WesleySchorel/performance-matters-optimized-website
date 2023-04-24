@@ -1,5 +1,8 @@
 <%- include('./partials/head') %>
 <%- include('./partials/navigation') %>
+<% if (typeof(newdata) != 'undefined') { %>
+Er ging iets mis hoor, sorry. <%= newdata.error %>
+<% } %>
 
 <main>
     <section class="hero-banner">
@@ -8,6 +11,26 @@
                 <h1>Voeg een URL toe.</h1>
                 <p>Voeg links van Vervoerregio Amsterdam partners toe aan de projecten lijst.</p>
             </div>
+        </div>
+    </section>
+    <section class="formulier-container">
+        <div class="formulier"> 
+            <h2>Partner formulier</h2>
+            <form method="post" action="/urltoevoegen">
+                <div>
+                    <label for="name">Selecteer een partner<span>(verplicht)</span></label>
+                    <select id="name" name="websiteId">
+                        <% partner_data.websites.forEach(website=> { %>
+                        <option value="<%= website.id  %>"><%= website.titel %></option>
+                        <%})%>
+                    </select>
+                </div>
+                <div>
+                    <label for="url">Voeg een nieuwe link toe<span>(verplicht)</span></label>
+                    <input id="url" type="url" required name="url">
+                </div>
+                <input type="submit" />
+            </form>
         </div>
     </section>
 </main>
