@@ -14,14 +14,14 @@
     </div>
     <div class="partner-container">
         <% partnerData.urls.forEach(url=> { %>
-            <div class="websites__container">
+            <div class="partner-cube">
                 <div>
                     <h2><%= url.website.titel %></h2>
                     <a class="websites__link" target="_blank" href="<%= url.url %>"><%= url.url %></a>
                 </div>
-                <!-- <div class="website__urls">
-                    <a class="website__icon" href="/check?id=<%= url.id %>"><img src="/assets/checkmark-outline.svg" alt="Check button" aria-label="Klik om de website te gaan checken"></a>
-                </div> -->
+                <div class="website__urls">
+                    <a class="website__icon" href="/check?id=<%= url.id %>">X</a>
+                </div>
             </div>
             <%})%>
     </div>
