@@ -196,20 +196,47 @@ nav li a:hover {
 .partner-cube {
   background-color: var(--c-white);
   width: auto;
-  height: 18em;
+  height: 6.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+}
+
+.partner-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-radius: 10px;
   align-items: flex-start;
-  padding: 2.5rem 2rem;
+}
+
+.check-button {
+  background-color: var(--c-pink);
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+}
+
+.globe {
+  height: 2em;
 }
 
 /* Responsive media queries */
 
+@media screen and (max-width: 1400px) {
+  .partner-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media screen and (max-width: 845px) {
   .header-container h1 {
     font-size: 2em;
+  }
+
+  .partner-container {
+    grid-template-columns: repeat(1,1fr);
   }
 
   .header-container p {

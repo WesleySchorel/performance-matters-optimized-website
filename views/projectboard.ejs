@@ -15,10 +15,13 @@
     <div class="partner-container">
         <% partner_data.websites.forEach(website=> { %>
             <div class="partner-cube">
-                <div>
+                <div class="partner-content">
                     <h2><%= website.titel %></h2>
                     <a class="partners__link" target="_blank" href="<%= website.homepage %>"><%= website.homepage %></a>
                 </div>
+                <section class="check-button">
+                    <a href="/"><img src="/assets/globe-outline.svg" class="globe" alt="check button"></a>
+                </section>
             </div>
             <%})%>
     </div>
