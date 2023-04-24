@@ -14,16 +14,23 @@
         </div>
     </div>
 
+    <section class="huidigURL">
+        <article>
+            <h2><%= checkData.url.website.titel %></h2>
+            <a class="websites__link" target="_blank" href="<%= checkData.url.url %>"><%= checkData.url.url %></a>
+        </article>
+    </section>
+
     <section class="instrumentarium-container">
         <article>
             <div>
                 <% principe_data.principes.forEach(principe=> { %>
-                    <h2><%= principe.titel %></h2>
+                    <h3><%= principe.titel %></h3>
                     <p><%- principe.beschrijving.html %></p>
                     <% principe.richtlijnen.forEach(richtlijn => { %>
                     <details onclick="scrollFunction()">
                         <summary>
-                            <h3><%- richtlijn.titel %></h3>
+                            <h4><%- richtlijn.titel %></h4>
                         </summary>        
                             <div id="info" class="info" id="<%= richtlijn.titel.toLowerCase() %>"><%- richtlijn.uitleg.html %></div>
                         </details>

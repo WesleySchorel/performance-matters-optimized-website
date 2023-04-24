@@ -32,8 +32,12 @@ app.get('/projectboard', function (req, res) {
 })
 
 app.get('/toolboard', function (req, res) {
-  res.render('toolboard', {principe_data, active: '/toolboard'})
-  console.log(principe_data);
+  let id = req.query.id || "clfqkxaut3kip0bw8ij803sqk"
+  let checkUrl = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1/url?id=' + id
+  
+  fetchJson(checkUrl).then((checkData) => {
+    res.render('toolboard', {checkData, principe_data, active: '/toolboard'})
+  })
 })
 
 app.get('/urltoevoegen', function (req, res) {
