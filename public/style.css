@@ -164,6 +164,7 @@ nav li a:hover {
 
 .uitleg-container img {
   max-height: 300px;
+  min-width: 500px;
   border-radius: 10px 0 0 10px;
   width: 50%;
 }
