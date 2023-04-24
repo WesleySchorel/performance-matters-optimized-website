@@ -406,6 +406,12 @@ form div{
     font-size: 1.5em;
   }
 
+  .uitleg-container div {
+    padding: 2em;
+    width: 100%;
+  }
+  
+
   .uitleg-container p {
     font-size: 1em;
   }
@@ -414,25 +420,22 @@ form div{
     flex-direction: column;
   }
 
-  .uitleg-container img {
+  .uitleg-container img, #uitleg-container-wide-img  {
     width: 100%;
+    border-radius: 10px 10px 0 0;
   }
 
   .header-container div {
     height: auto;
   }
 
-  
+  .top {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .uitleg-container {
     margin: 9em auto 7em auto;
-  }
-}
-
-@media (max-width: 700px) {
-  .top {
-    display: none;
   }
 }
