@@ -160,11 +160,16 @@ nav li a:hover {
 
 .uitleg-container div {
   padding: 2em;
+  width: 50%;
 }
 
 .uitleg-container img {
   max-height: 300px;
   border-radius: 10px 0 0 10px;
+  width: 40%;
+}
+
+#uitleg-container-wide-img{
   width: 50%;
 }
 
@@ -387,6 +392,8 @@ form div{
   .header-container div {
     height: auto;
   }
+
+  
 }
 
 @media screen and (max-width: 550px) {
