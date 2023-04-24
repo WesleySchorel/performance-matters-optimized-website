@@ -141,12 +141,13 @@ nav li a:hover {
 
 .uitleg-container {
   width: 80%;
-  margin: 6.5em auto 6.5em auto;
+  margin: 7.5em auto 7.5em auto;
   padding-bottom: 2em;
 }
 
 .uitleg-container article {
   display: flex;
+  border-radius: 10px;
   width: 100%;
   height: auto;
   background-color: var(--c-white);
@@ -159,11 +160,8 @@ nav li a:hover {
 
 .uitleg-container img {
   max-height: 300px;
+  border-radius: 10px 0 0 10px;
   width: 50%;
-}
-
-.uitleg-container article:first-child img {
-  transform: scaleX(-1);
 }
 
 .uitleg-container h2 {
@@ -191,7 +189,7 @@ nav li a:hover {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 2em;
+  grid-gap: 1.5em;
   /* padding: .5em; */
 }
 
@@ -202,6 +200,7 @@ nav li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border-radius: 10px;
   align-items: flex-start;
   padding: 2.5rem 2rem;
 }
