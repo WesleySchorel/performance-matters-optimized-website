@@ -342,6 +342,21 @@ form div{
   padding: 2.5rem 2rem;
 }
 
+/* BACK TO TOP */
+
+.top{
+  width: 60px;
+  height: 60px;
+  background: #444444;
+  border-radius: 50%;
+  position: fixed;
+  bottom:20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsive media queries */
 
 @media screen and (max-width: 1400px) {
@@ -364,7 +379,7 @@ form div{
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 706px) {
   .header-container h1 {
     font-size: 1.8em;
   }
@@ -399,5 +414,11 @@ form div{
 @media screen and (max-width: 550px) {
   .uitleg-container {
     margin: 9em auto 7em auto;
+  }
+}
+
+@media (max-width: 706px) {
+  .top {
+    display: none;
   }
 }
