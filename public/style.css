@@ -103,14 +103,28 @@ nav li a:hover {
 /* Header */
 
 .hero-banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/6Cy55t3.jpeg");
   height: 50vh;
-  height: 50svh;
   min-height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+#index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/B1ZpNJR.jpeg");
+}
+
+#projecten {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/6Cy55t3.jpeg");
+}
+
+#urltoevoegen {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/O3jeqQA.jpg");
+}
+
+#instrumentarium {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://i.imgur.com/ddCgDAd.jpeg");
 }
 
 .header-container {
@@ -379,7 +393,7 @@ form div{
   }
 }
 
-@media screen and (max-width: 706px) {
+@media screen and (max-width: 700px) {
   .header-container h1 {
     font-size: 1.8em;
   }
@@ -417,7 +431,7 @@ form div{
   }
 }
 
-@media (max-width: 706px) {
+@media (max-width: 700px) {
   .top {
     display: none;
   }
