@@ -282,7 +282,7 @@ form div{
 
 .instrumentarium-container {
   width: 80%;
-  margin: 7.5em auto 7.5em auto;
+  margin: 6.5em auto 7.5em auto;
   padding-bottom: 2em;
 }
 
@@ -307,6 +307,17 @@ form div{
 .instrumentarium-container p {
   margin-top: 5px;
   font-size: 1.1em;
+}
+
+.url-cube {
+  background-color: var(--c-white);
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
 }
 
 /* Responsive media queries */
