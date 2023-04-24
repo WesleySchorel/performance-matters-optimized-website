@@ -309,6 +309,17 @@ form div{
   font-size: 1.1em;
 }
 
+.url-cube {
+  background-color: var(--c-white);
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+}
+
 /* Responsive media queries */
 
 @media screen and (max-width: 1400px) {
