@@ -346,9 +346,12 @@ form div{
 }
 
 .instrumentarium-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto 7.5em auto;
   padding-bottom: 2em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1.5em;
 }
 
 .instrumentarium-container article {
