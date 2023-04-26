@@ -1,5 +1,6 @@
 <%- include('./partials/head') %>
 <%- include('./partials/navigation') %>
+
 <main>
     <section class="hero-banner" id="urltoevoegen"></section>
     <div class="header-container">
@@ -14,17 +15,18 @@
     </div>
     <div class="partner-container">
         <% partnerData.urls.forEach(url=> { %>
-            <div class="url-cube">
-                <div>
+            <div class="partner-cube">
+                <div class="partner-content">
                     <h2><%= url.website.titel %></h2>
-                    <a target="_blank" href="<%= url.url %>"><%= url.url %></a>
+                    <a class="partners__link" target="_blank" href="<%= url.url %>"><%= url.url %></a>
                 </div>
-                <div class="url-knop">
-                    <a class="url" href="/toolboard?id=<%= url.id %>"><ion-icon name="checkmark-outline"></ion-icon></a>
-                </div>
+                <section class="check-button">
+                    <a href="/urloverzicht?websiteId=<%= url.id %>"><img src="/assets/globe-outline.svg" class="globe" alt="check button"></a>
+                </section>
             </div>
             <%})%>
     </div>
     
 </main>
+
 <%- include('./partials/foot') %>

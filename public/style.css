@@ -172,6 +172,10 @@ nav li a:hover {
   margin-top: 2em;
 }
 
+.uitleg-container article:nth-child(2) {
+  object-position: right;
+}
+
 .uitleg-container div {
   padding: 2em;
   width: 50%;
@@ -219,6 +223,11 @@ nav li a:hover {
   /* padding: .5em; */
 }
 
+
+.partner-container p {
+  color: var(--c-black);
+}
+
 .partner-cube {
   background-color: var(--c-white);
   width: auto;
@@ -256,16 +265,7 @@ nav li a:hover {
   align-items: center;
 }
 
-.url-knop {
-  margin-left: 15px;
-  display: flex;
-  height: 2em;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-  background-color: var(--c-pink);
-}
+
 
 ion-icon {
   color: var(--c-white);
@@ -398,6 +398,7 @@ form div{
   align-items: center;
   border-radius: 10px;
   padding: 2.5rem 2rem;
+  
 }
 
 /* BACK TO TOP */
