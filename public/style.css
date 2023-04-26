@@ -171,8 +171,8 @@ nav li a:hover {
   margin-top: 2em;
 }
 
-.uitleg-container article:nth-child(2) {
-  object-position: right;
+.uitleg-container article:nth-child(2) img{
+  object-position: 80%;
 }
 
 .uitleg-container div {
@@ -460,6 +460,21 @@ form div{
   }
 }
 
+@media screen and (max-width: 750px) {
+  .uitleg-container article {
+    flex-direction: column;
+  }
+
+  .uitleg-container img, #uitleg-container-wide-img  {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .uitleg-container div {
+    padding: 2em;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .header-container h1 {
     font-size: 1.8em;
@@ -476,24 +491,9 @@ form div{
   .uitleg-container h2 {
     font-size: 1.5em;
   }
-
-  .uitleg-container div {
-    padding: 2em;
-    width: 100%;
-  }
   
-
   .uitleg-container p {
     font-size: 1em;
-  }
-
-  .uitleg-container article {
-    flex-direction: column;
-  }
-
-  .uitleg-container img, #uitleg-container-wide-img  {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
   }
 
   .header-container div {
