@@ -435,6 +435,12 @@ form div{
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .cubeimage {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .header-container h1 {
     font-size: 1.8em;

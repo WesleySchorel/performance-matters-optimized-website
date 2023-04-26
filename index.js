@@ -50,7 +50,7 @@ app.get('/urloverzicht', function (request, response) {
   let partnerUrl = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1/urls?websiteId=' + id + '&first=100'
   
   fetchJson(partnerUrl).then((partnerData) => {
-    response.render('urloverzicht', {partnerData, partner_data, active: '/urloverzicht'})
+    response.render('urloverzicht', {partnerData, partner_data, active: '/projectboard'})
   })
 })
 
