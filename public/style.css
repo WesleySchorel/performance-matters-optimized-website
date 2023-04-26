@@ -256,6 +256,7 @@ nav li a:hover {
 }
 
 .url-knop {
+  margin-left: 15px;
   display: flex;
   height: 2em;
   justify-content: center;
@@ -439,6 +440,10 @@ form div{
   .header-container h1 {
     font-size: 1.8em;
   }
+  
+  ul::after {
+    display: none;
+  }
 
   .header-container p {
     font-size: 1em;
@@ -479,5 +484,23 @@ form div{
 @media screen and (max-width: 550px) {
   .uitleg-container {
     margin: 9em auto 7em auto;
+  }
+  form label {
+    font-size: .9em;
+  }
+  .header-container p {
+    font-size: .9em;
+  }
+  .formulier-container h2 {
+    font-size: 1.5em;
+}
+.header-container h1 {
+  font-size: 1.6em;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .formulier-container {
+    margin: 7.5em auto 6.5em auto;
   }
 }
