@@ -24,7 +24,6 @@ html {
   font-size: 1rem;
   color: var(--c-black);
   background: var(--c-gray);
-  height: 100%;
 }
 
 /* Navigatie */
@@ -332,12 +331,13 @@ form div{
 
 .huidigURL h2 {
   color: var(--c-pink);
+  font-size: 1.7em;
 }
 
 .huidigURL article {
   display: flex;
   border-radius: 10px;
-  width: 70%;
+  width: 100%;
   height: auto;
   background-color: var(--c-white);
   margin-top: 2em;
@@ -346,21 +346,34 @@ form div{
 }
 
 .instrumentarium-container {
-  width: 100%;
+  width: 80%;
   margin: 0 auto 7.5em auto;
   padding-bottom: 2em;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 2fr 1fr;
   grid-gap: 1.5em;
+  z-index: -1;
 }
 
 .instrumentarium-container article {
   display: flex;
   border-radius: 10px;
-  width: 70%;
+  width: 100%;
   height: auto;
   background-color: var(--c-white);
   margin-top: 2em;
+}
+
+.instrumentarium-container nav {
+  margin-top: 2em;
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.instrumentarium-container nav h2 {
+  color: var(--c-pink);
 }
 
 .instrumentarium-container div {
@@ -369,7 +382,7 @@ form div{
 
 .instrumentarium-container h3 {
   color: var(--c-pink);
-  font-size: 1.7em;
+  font-size: 1.4em;
 }
 
 .instrumentarium-container p {
