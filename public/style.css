@@ -180,6 +180,7 @@ nav li a:hover {
 .uitleg-container img {
   border-radius: 10px 0 0 10px;
   width: 40%;
+  object-fit: cover;
 }
 
 #uitleg-container-wide-img{
@@ -433,6 +434,12 @@ form div{
 
   .header-container p {
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cubeimage {
+    display: none;
   }
 }
 
