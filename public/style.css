@@ -217,9 +217,8 @@ nav li a:hover {
   color: var(--c-pink);
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 1.5em;
-  /* padding: .5em; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
 }
 
 
@@ -227,22 +226,26 @@ nav li a:hover {
   color: var(--c-black);
 }
 
+.partner-content a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 275px;
+}
+
 .partner-cube {
   background-color: var(--c-white);
-  width: auto;
-  height: 6.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem;
+  flex-direction: row;
   border-radius: 10px;
-  padding: 2.5rem 2rem;
 }
 
 .partner-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+
 }
 
 .check-button {
