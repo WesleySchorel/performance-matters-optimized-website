@@ -191,6 +191,11 @@ nav li a:hover {
   height: auto;
 }
 
+#wide-img {
+  width: 100%;
+  height: 100%;
+}
+
 .uitleg-container h2 {
   color: var(--c-pink);
   font-size: 2em;
@@ -213,12 +218,13 @@ nav li a:hover {
 }
 
 .partner-container {
-  margin: 7.5em auto 6.5em auto;
+  margin: 6.5em auto 6.5em auto;
   color: var(--c-pink);
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1.5em;
+  /* padding: .5em; */
 }
 
 
@@ -226,26 +232,22 @@ nav li a:hover {
   color: var(--c-black);
 }
 
-.partner-content a {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 275px;
-}
-
 .partner-cube {
   background-color: var(--c-white);
+  width: auto;
+  height: 6.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  flex-direction: row;
   border-radius: 10px;
+  padding: 2.5rem 2rem;
 }
 
 .partner-content {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .check-button {
@@ -373,7 +375,6 @@ form div{
   padding: 2em;
   border-radius: 10px;
   z-index: 1;
-  height: 23%;
 }
 
 .instrumentarium-container nav h2 {
@@ -436,27 +437,17 @@ form div{
   align-items: center;
 }
 
-.add-button {
-  background-color: var(--c-pink);
-  width: 8rem;
-  height: 2.5rem;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-top: 1em;
-  cursor: pointer;
-  font-size: 1em;
-}
-
-.add-button:hover {
-  background-color: var(--c-hover);
-}
-
 /* Responsive media queries */
 
 @media screen and (max-width: 1400px) {
   .partner-container {
     grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 69em) {
+  .uitleg-container article:nth-child(2) img{
+    object-position: center;
   }
 }
 

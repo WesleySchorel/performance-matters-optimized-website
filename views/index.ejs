@@ -6,7 +6,8 @@
         <div class="header-container">
             <div>
                 <h1>Toolgankelijk.</h1>
-                <p>Samen met deze tool maakt u eenvoudig websites en apps toegankelijker, geleidt door de WCAG principes en richtlijnen.</p>
+                <p>Samen met deze tool maakt u eenvoudig websites en apps toegankelijker, geleidt door de WCAG principes
+                    en richtlijnen.</p>
             </div>
         </div>
     </section>
@@ -14,26 +15,42 @@
         <article>
 
             <img srcset="/assets/toegankelijk-small.png 1x, /assets/toegankelijk-large.png 2x"
-            src="/assets/toegankelijk.png"
-            alt="Foto over toegankelijkheid" />
+                src="/assets/toegankelijk.png" alt="Foto over toegankelijkheid" />
 
             <div>
                 <h2>Toegankelijkheid.</h2>
-                <p>Dat moet al binnen 2 jaar! Voor overheden is dit al verplicht. En vanaf 2025 moet iedere nieuwe website en app digitaal toegankelijk zijn.</p>
+                <p>Dat moet al binnen 2 jaar! Voor overheden is dit al verplicht. En vanaf 2025 moet iedere nieuwe
+                    website en app digitaal toegankelijk zijn.</p>
             </div>
         </article>
         <article>
-            <img id="uitleg-container-wide-img" src="/assets/wettelijk.png" loading="lazy" alt="Foto over de wettelijke achtergrond">
+            <!-- <img id="uitleg-container-wide-img" src="/assets/wettelijk.png" loading="lazy" alt="Foto over de wettelijke achtergrond"> -->
+            <picture id="uitleg-container-wide-img"> 
+                <source media="(min-width: 69em)" 
+                    srcset="/assets/wettelijk-small.png 320w, 
+                    /assets/wettelijk-medium.png 640w, 
+                    /assets/wettelijk.png 1024w"/>
+                <source srcset="/assets/wettelijk-small-crop.png 2x,
+                /assets/wettelijk-small-crop.png 1x" />
+                <img id="wide-img" src="/assets/wettelijk.png" 
+                alt="Beeldje van wettelijkheid"/>
+            </picture>
+
             <div>
                 <h2>Wat is de wettelijke achtergrond?</h2>
-                <p>Medio 2025 wordt door de Europese Unie de European Accessibility Act (EAA) of Europese Toegankelijkheidswet ingevoerd. De wet zorgt ervoor dat digitale barrières worden verwijderd voor mensen met een beperking. De eisen zijn gebaseerd op de Web Content Accessibility Guidelines (WCAG) van het World Wide Web Consortium</p>
+                <p>Medio 2025 wordt door de Europese Unie de European Accessibility Act (EAA) of Europese
+                    Toegankelijkheidswet ingevoerd. De wet zorgt ervoor dat digitale barrières worden verwijderd voor
+                    mensen met een beperking. De eisen zijn gebaseerd op de Web Content Accessibility Guidelines (WCAG)
+                    van het World Wide Web Consortium</p>
             </div>
         </article>
         <article>
             <img src="/assets/hva.png" loading="lazy" alt="Foto over de tool">
             <div>
                 <h2>Over de tool.</h2>
-                <p>Vervoerregio Amsterdam heeft samen met studenten van de Hogeschool van Amsterdam een checklist ontwikkeld waarop eenvoudige wijze wordt uitgelegd wat hierbij komt kijken en welke stappen u kunt nemen om uw website en app toegankelijk te maken. </p>
+                <p>Vervoerregio Amsterdam heeft samen met studenten van de Hogeschool van Amsterdam een checklist
+                    ontwikkeld waarop eenvoudige wijze wordt uitgelegd wat hierbij komt kijken en welke stappen u kunt
+                    nemen om uw website en app toegankelijk te maken. </p>
             </div>
         </article>
     </section>
