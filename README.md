@@ -24,4 +24,5 @@
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
 ## Bronnen
-
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/
