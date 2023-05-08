@@ -375,6 +375,7 @@ form div{
   padding: 2em;
   border-radius: 10px;
   z-index: 1;
+  height: 23%;
 }
 
 .instrumentarium-container nav h2 {
