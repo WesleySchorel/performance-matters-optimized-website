@@ -213,7 +213,7 @@ nav li a:hover {
 }
 
 .partner-container {
-  margin: 6.5em auto 6.5em auto;
+  margin: 7.5em auto 6.5em auto;
   color: var(--c-pink);
   width: 80%;
   display: grid;
@@ -430,6 +430,22 @@ form div{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.add-button {
+  background-color: var(--c-pink);
+  width: 8rem;
+  height: 2.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.add-button:hover {
+  background-color: var(--c-hover);
 }
 
 /* Responsive media queries */
