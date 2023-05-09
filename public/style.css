@@ -158,7 +158,7 @@ nav li a:hover {
 
 .uitleg-container {
   width: 80%;
-  margin: 6.5em auto 7.5em auto;
+  margin: 6.5em auto .5em auto;
   padding-bottom: 2em;
 }
 
@@ -171,7 +171,7 @@ nav li a:hover {
   margin-top: 2em;
 }
 
-.uitleg-container article:nth-child(2) img{
+.uitleg-container article:nth-child(2) img {
   object-position: 80%;
 }
 
@@ -186,7 +186,7 @@ nav li a:hover {
   object-fit: cover;
 }
 
-#uitleg-container-wide-img{
+#uitleg-container-wide-img {
   width: 50%;
   height: auto;
 }
@@ -218,7 +218,7 @@ nav li a:hover {
 }
 
 .partner-container {
-  margin: 6.5em auto 6.5em auto;
+  margin: 6.5em auto 2.5em auto;
   color: var(--c-pink);
   width: 80%;
   display: grid;
@@ -227,7 +227,7 @@ nav li a:hover {
 }
 
 .margin-extra {
-  margin: 8em auto 6.5em auto;
+  margin: 8em auto 2.5em auto;
 }
 
 .partner-container p {
@@ -268,7 +268,7 @@ nav li a:hover {
   width: 2em;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 
@@ -283,7 +283,7 @@ ion-icon {
 .formulier-container {
   width: 80%;
   border-radius: 10px;
-  margin: 6.5em auto 6.5em auto;
+  margin: 6.5em auto .5em auto;
   padding-bottom: 2em;
 
 }
@@ -305,7 +305,8 @@ form label {
   margin-bottom: 3px;
 }
 
-form input, select {
+form input,
+select {
   border: 2px solid var(--c-pink);
   outline: var(--c-pink);
   color: var(--c-pink);
@@ -324,7 +325,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-form div{
+form div {
   display: flex;
   flex-direction: column;
 }
@@ -354,7 +355,7 @@ form div{
 
 .instrumentarium-container {
   width: 80%;
-  margin: 0 auto 7.5em auto;
+  margin: 0 auto .5em auto;
   padding-bottom: 2em;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -377,7 +378,10 @@ form div{
   padding: 2em;
   border-radius: 10px;
   z-index: 1;
-  height: 23%;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  max-height: 250px !important;
 }
 
 .instrumentarium-container nav h2 {
@@ -409,7 +413,7 @@ form div{
   cursor: pointer;
 }
 
-.instrumentarium-container summary > * {
+.instrumentarium-container summary>* {
   display: inline;
 }
 
@@ -422,7 +426,7 @@ form div{
   align-items: center;
   border-radius: 10px;
   padding: 2.5rem 2rem;
-  
+
 }
 
 .add-button {
@@ -444,13 +448,13 @@ form div{
 
 /* BACK TO TOP */
 
-.top{
+.top {
   width: 60px;
   height: 60px;
   background: #444444;
   border-radius: 50%;
   position: fixed;
-  bottom:20px;
+  bottom: 20px;
   right: 20px;
   display: flex;
   justify-content: center;
@@ -461,12 +465,12 @@ form div{
 
 @media screen and (max-width: 1400px) {
   .partner-container {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 69em) {
-  .uitleg-container article:nth-child(2) img{
+  .uitleg-container article:nth-child(2) img {
     object-position: center;
   }
 }
@@ -476,8 +480,16 @@ form div{
     font-size: 2em;
   }
 
+  .instrumentarium-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .instrumentarium-container nav {
+    margin-top: .5em;
+}
+
   .partner-container {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .header-container p {
@@ -496,10 +508,12 @@ form div{
     flex-direction: column;
   }
 
-  .uitleg-container img, #uitleg-container-wide-img  {
+  .uitleg-container img,
+  #uitleg-container-wide-img {
     width: 100%;
     border-radius: 10px 10px 0 0;
   }
+
   .uitleg-container div {
     padding: 2em;
     width: 100%;
@@ -510,7 +524,7 @@ form div{
   .header-container h1 {
     font-size: 1.8em;
   }
-  
+
   ul::after {
     display: none;
   }
@@ -522,7 +536,7 @@ form div{
   .uitleg-container h2 {
     font-size: 1.5em;
   }
-  
+
   .uitleg-container p {
     font-size: 1em;
   }
@@ -540,18 +554,22 @@ form div{
   .uitleg-container {
     margin: 9em auto 7em auto;
   }
+
   form label {
     font-size: .9em;
   }
+
   .header-container p {
     font-size: .9em;
   }
+
   .formulier-container h2 {
     font-size: 1.5em;
-}
-.header-container h1 {
-  font-size: 1.6em;
-}
+  }
+
+  .header-container h1 {
+    font-size: 1.6em;
+  }
 }
 
 @media screen and (max-width: 400px) {

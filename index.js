@@ -46,7 +46,7 @@ app.get('/urltoevoegen', function (req, res) {
 
 app.get('/urloverzicht', function (request, response) {
   let id = request.query.websiteId
-  console.log(id);
+  // console.log(id);
   let partnerUrl = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1/urls?websiteId=' + id + '&first=100'
   
   fetchJson(partnerUrl).then((partnerData) => {
@@ -58,7 +58,7 @@ app.post('/urltoevoegen', function(req, res) {
   const formURL = baseURL + postSlug
   postJson(formURL, req.body).then((data) => {
     let newURL = { ... req.body }
-    console.log(JSON.stringify(data))
+    // console.log(JSON.stringify(data))
     if (data.data) {
       res.redirect('/projectboard') 
     } else {
