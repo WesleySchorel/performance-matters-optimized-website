@@ -76,11 +76,14 @@ nav ul {
   background-color: var(--c-white);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  overflow: auto;
+  overflow-y: hidden;
 }
 
 nav li {
   float: left;
   background-color: var(--c-pink);
+  white-space: nowrap
 }
 
 li.active {
@@ -184,6 +187,7 @@ nav li a:hover {
   border-radius: 10px 0 0 10px;
   width: 40%;
   object-fit: cover;
+  background-color: rgb(193, 193, 193);
 }
 
 #uitleg-container-wide-img {
