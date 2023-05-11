@@ -76,11 +76,14 @@ nav ul {
   background-color: var(--c-white);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  overflow: auto;
+  overflow-y: hidden;
 }
 
 nav li {
   float: left;
   background-color: var(--c-pink);
+  white-space: nowrap
 }
 
 li.active {
@@ -570,10 +573,6 @@ form div {
 
   .header-container h1 {
     font-size: 1.6em;
-  }
-
-  nav ul {
-    overflow: scroll;
   }
 }
 
