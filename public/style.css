@@ -184,6 +184,7 @@ nav li a:hover {
   border-radius: 10px 0 0 10px;
   width: 40%;
   object-fit: cover;
+  background-color: rgb(193, 193, 193);
 }
 
 #uitleg-container-wide-img {
@@ -569,6 +570,10 @@ form div {
 
   .header-container h1 {
     font-size: 1.6em;
+  }
+
+  nav ul {
+    overflow: scroll;
   }
 }
 
