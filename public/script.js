@@ -20,3 +20,5 @@ function scrollFunction() {
   const element = document.getElementById("info");
   element.scrollIntoView({behavior: "smooth"});
 }
+
+// console.log(window.navigator.onLine)
